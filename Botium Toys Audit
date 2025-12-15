@@ -1,0 +1,113 @@
+# Security Audit Checklist - Botium Toys
+
+## Controls Assessment
+
+Based on the scope, goals, and risk assessment report, the following controls were evaluated to determine if Botium Toys currently has them in place.
+
+---
+
+### Administrative/Managerial Controls
+
+| Control | Status | Notes |
+|---------|--------|-------|
+| Least Privilege | ❌ NO | All employees currently have access to customer data |
+| Disaster Recovery Plans | ❌ NO | No disaster recovery plans exist |
+| Password Policies | ❌ NO | Current policies are weak and not enforced |
+| Separation of Duties | ❌ NO | Not implemented |
+| Access Control Policies | ❌ NO | Need to be established |
+| Account Management Policies | ❌ NO | Requires implementation |
+
+---
+
+### Technical Controls
+
+| Control | Status | Notes |
+|---------|--------|-------|
+| Firewall | ✅ YES | Properly configured with security rules |
+| Intrusion Detection System (IDS) | ❌ NO | Not installed |
+| Intrusion Prevention System (IPS) | ❌ NO | Not installed |
+| Encryption | ❌ NO | Credit card data not encrypted |
+| Backups | ❌ NO | No backups of critical data |
+| Antivirus Software | ✅ YES | Installed and monitored regularly |
+| Password Management System | ❌ NO | No centralized system in place |
+| Manual Monitoring for Legacy Systems | ⚠️ PARTIAL | Systems monitored but no regular schedule |
+
+---
+
+### Physical/Operational Controls
+
+| Control | Status | Notes |
+|---------|--------|-------|
+| Locks (offices, storefront, warehouse) | ✅ YES | Sufficient locks in place |
+| CCTV Surveillance | ✅ YES | Up-to-date surveillance system |
+| Fire Detection/Prevention | ✅ YES | Functioning fire alarm and sprinkler systems |
+| Adequate Lighting | ✅ YES | Proper lighting throughout facilities |
+
+---
+
+## Compliance Assessment
+
+### Payment Card Industry Data Security Standard (PCI DSS)
+
+| Best Practice | Status | Notes |
+|---------------|--------|-------|
+| Only authorized users have access to credit card information | ❌ NO | All employees currently have access |
+| Credit card information is securely stored, processed, and transmitted | ❌ NO | No encryption in place |
+| Data encryption procedures implemented | ❌ NO | Encryption needed for all touchpoints |
+| Secure password management policies adopted | ❌ NO | Current policies insufficient |
+
+**Compliance Status:** ❌ NOT COMPLIANT
+
+---
+
+### General Data Protection Regulation (GDPR)
+
+| Best Practice | Status | Notes |
+|---------------|--------|-------|
+| E.U. customers' data is kept private/secured | ❌ NO | Inadequate access controls |
+| Plan to notify E.U. customers within 72 hours of breach | ✅ YES | Plan is established |
+| Data is properly classified and inventoried | ❌ NO | Classification needed |
+| Privacy policies and procedures enforced | ✅ YES | Policies exist and are enforced |
+
+**Compliance Status:** ⚠️ PARTIALLY COMPLIANT
+
+---
+
+### System and Organizations Controls (SOC Type 1, SOC Type 2)
+
+| Best Practice | Status | Notes |
+|---------------|--------|-------|
+| User access policies are established | ❌ NO | Need to implement least privilege |
+| Sensitive data (PII/SPII) is confidential/private | ❌ NO | Currently accessible to all employees |
+| Data integrity ensured | ✅ YES | IT department has integrity controls |
+| Data available to authorized individuals | ✅ YES | Data availability ensured |
+
+**Compliance Status:** ⚠️ PARTIALLY COMPLIANT
+
+---
+
+## Summary
+
+### Critical Priorities (Immediate Action Required)
+1. **Implement encryption** for all credit card data
+2. **Establish access controls** (Least Privilege & Separation of Duties)
+3. **Create disaster recovery plans** and implement backup systems
+4. **Install IDS/IPS** for threat detection
+5. **Deploy password management system** with strong policies
+
+### Medium Priority
+- Regular maintenance schedule for legacy systems
+- Data classification and inventory system
+- Centralized account management
+
+### Current Strengths
+- Physical security measures adequate
+- Firewall and antivirus properly configured
+- GDPR breach notification procedures in place
+- Data integrity and availability controls functioning
+
+---
+
+**Risk Level:** 🔴 HIGH (8/10)
+
+**Overall Assessment:** Botium Toys requires significant security improvements, particularly in data protection, access controls, and disaster recovery to meet compliance standards and reduce risk exposure.
